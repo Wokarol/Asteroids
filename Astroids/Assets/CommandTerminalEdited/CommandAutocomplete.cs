@@ -10,7 +10,6 @@ namespace CommandTerminal
 
         public void Register(string word)
         {
-            Debug.Log($"Adding word for {word}");
             if (!Contains(word)) {
                 known_words.Add(word.ToLower());
             }

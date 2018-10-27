@@ -1,7 +1,7 @@
 ﻿using CommandTerminal;
 using UnityEngine;
 
-namespace Wokarol
+namespace CommandTerminal
 {
     public abstract class TerminalCommandGeneric : MonoBehaviour
     {

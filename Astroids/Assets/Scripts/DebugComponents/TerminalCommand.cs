@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace Wokarol
+namespace CommandTerminal
 {
     public class TerminalCommand : TerminalCommandGeneric
     {

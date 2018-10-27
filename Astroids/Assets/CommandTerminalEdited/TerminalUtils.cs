@@ -7,7 +7,6 @@ namespace CommandTerminal
     {
         public static void SafeAddCommand(string name, CommandInfo info)
         {
-            Debug.Log($"Adding command {name}");
             Terminal.Shell.AddCommand(name, info);
             if (!Terminal.Autocomplete.Contains(name)) {
                 Terminal.Autocomplete.Register(name);
