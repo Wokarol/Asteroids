@@ -36,7 +36,7 @@ namespace CommandTerminal
                 .Replace("{name}", name)
                 .Replace("{parent_name}", (transform.parent != null) ? transform.parent.name : name);
 
-            TerminalUtils.SafeAddCommand(formattedCommand, Execute, ArgumentCount, ArgumentCount, help);
+            TerminalUtils.SafeRemoveCommand(formattedCommand);
         }
 
         protected abstract void Execute(CommandArg[] args);

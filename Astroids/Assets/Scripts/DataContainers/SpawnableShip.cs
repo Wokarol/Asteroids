@@ -6,6 +6,7 @@ namespace Wokarol
     public class SpawnableShip : ScriptableObject
     {
         public string ID;
+        public string ShipName;
         public GameObject shipPrefab;
     }
 }

@@ -9,9 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d03cc50063305945b2180233bc102b2, type: 3}
-  m_Name: DefaultShip
+  m_Script: {fileID: 11500000, guid: 6d2bf2d65f7859a4b8cf5df929f9ecf0, type: 3}
+  m_Name: Global
   m_EditorClassIdentifier: 
-  ID: ship_default
-  shipPrefab: {fileID: 4891301464174221218, guid: e439393591bd99a46868606abaff488a,
-    type: 3}
+  destription: 
