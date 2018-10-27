@@ -8,6 +8,8 @@ namespace Wokarol
 {
     public class TerminalBoolCommand : TerminalCommandGeneric
     {
+        protected override int ArgumentCount => 1;
+
         [SerializeField] CommandEvent onCommandEvent = new CommandEvent();
         protected override void Execute(CommandArg[] args)
         {

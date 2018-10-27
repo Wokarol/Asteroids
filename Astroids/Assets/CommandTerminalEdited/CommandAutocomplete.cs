@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using UnityEngine;
 
 namespace CommandTerminal
 {
@@ -7,11 +8,24 @@ namespace CommandTerminal
         List<string> known_words = new List<string>();
         List<string> buffer = new List<string>();
 
-        public void Register(string word) {
-            known_words.Add(word.ToLower());
+        public void Register(string word)
+        {
+            Debug.Log($"Adding word for {word}");
+            if (!Contains(word)) {
+                known_words.Add(word.ToLower());
+            }
+        }
+        public void Remove(string word)
+        {
+            known_words.Remove(word.ToLower());
+        }
+        public bool Contains(string word)
+        {
+            return known_words.Contains(word.ToLower());
         }
 
-        public string[] Complete(ref string text, ref int format_width) {
+        public string[] Complete(ref string text, ref int format_width)
+        {
             string partial_word = EatLastWord(ref text).ToLower();
             string known;
 
@@ -34,7 +48,8 @@ namespace CommandTerminal
             return completions;
         }
 
-        string EatLastWord(ref string text) {
+        string EatLastWord(ref string text)
+        {
             int last_space = text.LastIndexOf(' ');
             string result = text.Substring(last_space + 1);
 
@@ -42,7 +57,8 @@ namespace CommandTerminal
             return result;
         }
 
-        string PartialWord(string[] words) {
+        string PartialWord(string[] words)
+        {
             if (words.Length == 0) {
                 return "";
             }

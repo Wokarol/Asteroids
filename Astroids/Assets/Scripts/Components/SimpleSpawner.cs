@@ -6,8 +6,8 @@ namespace Wokarol
 {
     public class SimpleSpawner : MonoBehaviour
     {
-        [SerializeField] GameObject objectPrefab;
-        [SerializeField] ScreenData screenData;
+        [SerializeField] GameObject objectPrefab = null;
+        [SerializeField] ScreenData screenData = null;
         [SerializeField] Vector2 safeZone = Vector2.zero;
 
         public void SpawnNotReturn()

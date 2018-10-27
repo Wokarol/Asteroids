@@ -234,6 +234,17 @@ namespace CommandTerminal
             commands.Add(name, info);
         }
 
+        public void RemoveCommand (string name)
+        {
+            name = name.ToUpper();
+            if (commands.ContainsKey(name)) {
+                commands.Remove(name);
+                return;
+            } else {
+               IssueErrorMessage("Command {0} is not defined and therefore can't be deleted", name);
+            }
+        }
+
         public void AddCommand(string name, Action<CommandArg[]> proc, int min_args = 0, int max_args = -1, string help = "", string hint = null) {
             var info = new CommandInfo() {
                 proc = proc,
