@@ -15,7 +15,7 @@ namespace Wokarol
 
         private void OnEnable()
         {
-            var choosenShip = ships.GetShip(betweenSceneData.GetData("choosen_ship", 0));
+            var choosenShip = ships.GetShip(betweenSceneData != null ? betweenSceneData.GetData("choosen_ship", 0) : Random.Range(0, ships.ShipCount));
             var _ob = Instantiate(choosenShip.shipPrefab, transform.position, Quaternion.identity);
             onPlayerSpawn.Invoke(_ob);
         }
@@ -30,5 +30,5 @@ namespace Wokarol
         private class SpawnEvent : UnityEvent<GameObject>
         {
         }
-    } 
+    }
 }

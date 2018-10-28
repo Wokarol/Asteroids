@@ -17,7 +17,7 @@ namespace Wokarol
 
         private void Update()
         {
-            if (!Application.isPlaying && loopData != null) {
+            if (/*!Application.isPlaying && */loopData != null) {
                 Calculate();
             }
         }

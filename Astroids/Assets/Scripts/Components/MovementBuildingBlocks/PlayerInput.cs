@@ -14,7 +14,8 @@ namespace Wokarol
 
             Rotate = Input.GetAxisRaw("Horizontal");
 
-            Boost = Input.GetKey(KeyCode.LeftShift);
+            Boost = Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.Joystick1Button2);
+            Shoot = Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.Joystick1Button0);
         }
     } 
 }

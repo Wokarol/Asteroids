@@ -18,12 +18,150 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b998b94df23314349bd0295fef150956, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &2239261155268523468 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6697434202097726600, guid: 16a79689fd1501a40929ba9a78f08645,
+    type: 3}
+  m_PrefabInstance: {fileID: 4891301463504601412}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2239261155268523475 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6697434202097726615, guid: 16a79689fd1501a40929ba9a78f08645,
+    type: 3}
+  m_PrefabInstance: {fileID: 4891301463504601412}
+  m_PrefabAsset: {fileID: 0}
+--- !u!331 &3635130229823589031
+SpriteMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2239261155268523468}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10758, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: fc82e4255ff01c446ba0b1c1db1980ec, type: 3}
+  m_MaskAlphaCutoff: 0.2
+  m_FrontSortingLayerID: 0
+  m_BackSortingLayerID: 0
+  m_FrontSortingLayer: 0
+  m_BackSortingLayer: 0
+  m_FrontSortingOrder: 0
+  m_BackSortingOrder: 0
+  m_IsCustomRangeActive: 0
+  m_SpriteSortPoint: 0
 --- !u!4 &2239261155787488466 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6697434202650017174, guid: 16a79689fd1501a40929ba9a78f08645,
     type: 3}
   m_PrefabInstance: {fileID: 4891301463504601412}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &4521777965089647353
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6798889334156754820}
+  - component: {fileID: 8631372334433663946}
+  m_Layer: 0
+  m_Name: New Sprite
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6798889334156754820
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4521777965089647353}
+  m_LocalRotation: {x: -0, y: -0, z: 0.18549004, w: 0.98264617}
+  m_LocalPosition: {x: 0.036132812, y: -0.16113281, z: 0}
+  m_LocalScale: {x: 1.0866805, y: 0.11359813, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2239261155268523475}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 21.379002}
+--- !u!212 &8631372334433663946
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4521777965089647353}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: dfe28532a6f78fb4392c36ebc344d76e, type: 3}
+  m_Color: {r: 1, g: 0.57078594, b: 0.19339621, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 1
+  m_SpriteSortPoint: 0
 --- !u!1 &4891301464174221218
 GameObject:
   m_ObjectHideFlags: 0
@@ -47,8 +185,9 @@ GameObject:
   - component: {fileID: 5709549214453427247}
   - component: {fileID: 17180493928390321}
   - component: {fileID: 2865042230315027330}
+  - component: {fileID: 951428987297467107}
   m_Layer: 13
-  m_Name: DefaultShip
+  m_Name: DebugShip
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -65,9 +204,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 5143084927640144586}
   - {fileID: 2239261155787488466}
-  - {fileID: 5174389140807672672}
+  - {fileID: 5143084927640144586}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -382,6 +520,19 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
+--- !u!114 &951428987297467107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4891301464174221218}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c828364abe2fdb64da99927dc016e0be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxVelocity: 20
 --- !u!1 &7504500908680373976
 GameObject:
   m_ObjectHideFlags: 0
@@ -393,6 +544,8 @@ GameObject:
   - component: {fileID: 5143084927640144586}
   - component: {fileID: 7283887349567947913}
   - component: {fileID: 3847875727188331561}
+  - component: {fileID: 5616882258119861237}
+  - component: {fileID: 5574066413112460661}
   m_Layer: 0
   m_Name: TerminalCommands
   m_TagString: Untagged
@@ -412,7 +565,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4891301464174221217}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &7283887349567947913
 MonoBehaviour:
@@ -474,6 +627,66 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &5616882258119861237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7504500908680373976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faf5e86eb479db44d87729f7eaf57c52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  commandName: '{parent_name}.stabilizers'
+  help: Set if you want to stablize ship
+  onCommandEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5709549214453427247}
+        m_MethodName: set_enabled
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: CommandTerminal.TerminalBoolCommand+CommandEvent, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!114 &5574066413112460661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7504500908680373976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faf5e86eb479db44d87729f7eaf57c52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  commandName: '{parent_name}.velocity_limiter'
+  help: Set if you want to limit ship velocity
+  onCommandEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 951428987297467107}
+        m_MethodName: set_enabled
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: CommandTerminal.TerminalBoolCommand+CommandEvent, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!114 &8221744183164678932 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3600878599627895376, guid: 16a79689fd1501a40929ba9a78f08645,
@@ -492,66 +705,6 @@ ParticleSystem:
     type: 3}
   m_PrefabInstance: {fileID: 4891301463504601412}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &8688440572918202344
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5174389140807672672}
-  - component: {fileID: 2119018049567754588}
-  - component: {fileID: 223456109099795403}
-  m_Layer: 13
-  m_Name: Gun
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &5174389140807672672
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8688440572918202344}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4891301464174221217}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2119018049567754588
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8688440572918202344}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a716b1653057f0a45a73079efd3b3d9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  input: {fileID: 717446431730942228}
-  bulletPool: {fileID: 223456109099795403}
---- !u!114 &223456109099795403
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8688440572918202344}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0aeb31fa9d710c4e9a21b8bcab62039, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefab: {fileID: 1465730145796875146, guid: a02ae72e954809a44bfe87147fdae6ab, type: 3}
-  initialSize: 10
 --- !u!1001 &4891301463504601412
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -568,11 +721,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6697434202650017174, guid: 16a79689fd1501a40929ba9a78f08645,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3070115534262751614, guid: 16a79689fd1501a40929ba9a78f08645,
         type: 3}
@@ -634,5 +782,20 @@ PrefabInstance:
       propertyPath: engine
       value: 
       objectReference: {fileID: 4693316930122699898}
+    - target: {fileID: 6697434202097726614, guid: 16a79689fd1501a40929ba9a78f08645,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6697434202097726614, guid: 16a79689fd1501a40929ba9a78f08645,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.7129014
+      objectReference: {fileID: 0}
+    - target: {fileID: 6697434202097726614, guid: 16a79689fd1501a40929ba9a78f08645,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 16a79689fd1501a40929ba9a78f08645, type: 3}

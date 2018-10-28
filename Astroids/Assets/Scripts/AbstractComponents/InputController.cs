@@ -9,5 +9,7 @@ namespace Wokarol
         public float Rotate { get; protected set; }
 
         public bool Boost { get; protected set; }
+
+        public bool Shoot { get; protected set; }
     }
 }

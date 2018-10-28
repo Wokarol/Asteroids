@@ -9,7 +9,10 @@ EditorBuildSettings:
     path: Assets/Scenes/PersistentScene.unity
     guid: c1ae0c6958c7f3744926790afa75cb0a
   - enabled: 1
-    path: Assets/Scenes/Main.unity
+    path: Assets/Scenes/MainMenu.unity
+    guid: 0cbe68570f7930d43a8d9f56d882da79
+  - enabled: 1
+    path: Assets/Scenes/Testing/DebugSpace.unity
     guid: 96cabf147430a3b4fbf82a9a2b5536cb
   - enabled: 1
     path: Assets/Scenes/Testing/TerminalTesting.unity

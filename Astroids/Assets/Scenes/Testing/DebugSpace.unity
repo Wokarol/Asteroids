@@ -1476,8 +1476,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e18e3054183b1a0468849f2a3a81f57c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  betweenSceneData: {fileID: 11400000, guid: 0801e2999c96471499393d0efe2a9060, type: 2}
-  ships: {fileID: 11400000, guid: c366a85b3a1c29b4b8b442b183a41723, type: 2}
+  betweenSceneData: {fileID: 0}
+  ships: {fileID: 11400000, guid: 393ec21b2c5d3454bb8fcaabca6f8cc9, type: 2}
   onPlayerSpawn:
     m_PersistentCalls:
       m_Calls:

@@ -32,6 +32,8 @@ namespace Wokarol
             } else if (force > 0 && !particleSystem.isPlaying) {
                 particleSystem.Play(true);
             }
+
+            //Debug.Log($"{name} -> Force: {force}");
         }
     }
 }
