@@ -5,8 +5,8 @@ using Wokarol;
 
 public class EnginePowerMonitor : MonoBehaviour
 {
-    [SerializeField] Engine engine;
-    [SerializeField] float output;
+    [SerializeField] Engine engine = null;
+    [SerializeField] float output = 0;
 
     private void Update()
     {

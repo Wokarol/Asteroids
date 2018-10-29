@@ -8,10 +8,10 @@ namespace Wokarol
 {
     public class PlayerShipSpawner : MonoBehaviour
     {
-        [SerializeField] BetweenSceneData betweenSceneData;
-        [SerializeField] ShipsGroup ships;
+        [SerializeField] BetweenSceneData betweenSceneData = null;
+        [SerializeField] ShipsGroup ships = null;
 
-        [SerializeField] SpawnEvent onPlayerSpawn;
+        [SerializeField] SpawnEvent onPlayerSpawn = null;
 
         private void OnEnable()
         {

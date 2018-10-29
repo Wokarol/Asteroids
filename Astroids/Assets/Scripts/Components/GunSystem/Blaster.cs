@@ -7,7 +7,7 @@ namespace Wokarol.WeaponSystem
 {
     public class Blaster : SingleShootGun
     {
-        [SerializeField] Pool bulletPool;
+        [SerializeField] Pool bulletPool = null;
 
         protected override void Shoot()
         {

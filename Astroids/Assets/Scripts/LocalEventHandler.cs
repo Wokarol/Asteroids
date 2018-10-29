@@ -7,7 +7,7 @@ namespace Wokarol.LocalEvents
 {
     public class LocalEventHandler : MonoBehaviour
     {
-        [SerializeField] List<LocalEvent> localEvents;
+        [SerializeField] List<LocalEvent> localEvents = new List<LocalEvent>();
 
         public void CallEvent(EventName eventName)
         {
@@ -22,8 +22,8 @@ namespace Wokarol.LocalEvents
         [System.Serializable]
         private class LocalEvent
         {
-            public EventName Name;
-            public UnityEvent Event;
+            public EventName Name = null;
+            public UnityEvent Event = new UnityEvent();
         }
     } 
 }

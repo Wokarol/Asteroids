@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class DisableGroup : MonoBehaviour
 {
-    [SerializeField] MonoBehaviour[] components;
-    [SerializeField] GameObject[] gameObjects;
+    [SerializeField] MonoBehaviour[] components = new MonoBehaviour[0];
+    [SerializeField] GameObject[] gameObjects = new GameObject[0];
     private void OnEnable()
     {
         foreach (var comp in components) {

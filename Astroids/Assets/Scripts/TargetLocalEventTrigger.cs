@@ -5,7 +5,7 @@ using Wokarol.LocalEvents;
 
 public class TargetLocalEventTrigger : MonoBehaviour
 {
-    [SerializeField] EventName eventToCall;
+    [SerializeField] EventName eventToCall = null;
 
     LocalEventHandler eventHandler;
     public void SetTarget(GameObject ob)
