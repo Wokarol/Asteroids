@@ -14,6 +14,7 @@ namespace Wokarol
         // ParticleSystem Settings
         float startLifetimeMin = 0;
         float startLifetimeMax = 0;
+        [SerializeField] bool debug;
 
         private void Awake()
         {
@@ -39,7 +40,7 @@ namespace Wokarol
                 particleSystem.Play(true);
             }
 
-            //Debug.Log($"{name} -> Force: {forceMin} <> {forceMax} , constant: {main.startLifetime.constant}");
+            if(debug) Debug.Log($"{name} -> Force: {forceMin} <> {forceMax} , constant: {main.startLifetime.constant}");
         }
     }
 }
