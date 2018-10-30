@@ -12,28 +12,34 @@ namespace Wokarol
         [SerializeField] bool inverted = false;
 
         // ParticleSystem Settings
-        float startLifetime = 0;
+        float startLifetimeMin = 0;
+        float startLifetimeMax = 0;
 
         private void Awake()
         {
             particleSystem = GetComponent<ParticleSystem>();
-            startLifetime = particleSystem.main.startLifetimeMultiplier;
+            startLifetimeMin = particleSystem.main.startLifetime.constantMin;
+            startLifetimeMax = particleSystem.main.startLifetime.constantMax;
         }
 
 
         void Update()
         {
             var main = particleSystem.main;
-            var force = Mathf.Lerp(0, startLifetime, engine.OutputForce * (inverted ? -1 : 1));
-            main.startLifetimeMultiplier = force;
+            var forceMin = Mathf.Lerp(0, startLifetimeMin, engine.OutputForce * (inverted ? -1 : 1));
+            var forceMax = Mathf.Lerp(0, startLifetimeMax, engine.OutputForce * (inverted ? -1 : 1));
+            var lifetimeMinMax = main.startLifetime;
+            lifetimeMinMax.constantMin = forceMin;
+            lifetimeMinMax.constantMax = forceMax;
+            main.startLifetime = lifetimeMinMax;
 
-            if (force == 0 && particleSystem.isPlaying) {
+            if (engine.OutputForce == 0 && particleSystem.isPlaying) {
                 particleSystem.Stop(true);
-            } else if (force > 0 && !particleSystem.isPlaying) {
+            } else if (engine.OutputForce > 0 && !particleSystem.isPlaying) {
                 particleSystem.Play(true);
             }
 
-            //Debug.Log($"{name} -> Force: {force}");
+            //Debug.Log($"{name} -> Force: {forceMin} <> {forceMax} , constant: {main.startLifetime.constant}");
         }
     }
 }
