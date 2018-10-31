@@ -3,11 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class OnTriggerEvent : MonoBehaviour
+namespace Wokarol.EventTriggers
 {
-    [SerializeField] UnityEvent onTriggerEvent = new UnityEvent();
-    private void OnTriggerEnter2D(Collider2D collision)
+    public class OnTriggerEvent : MonoBehaviour
     {
-        onTriggerEvent.Invoke();
-    }
+        [SerializeField] UnityEvent onTriggerEvent = new UnityEvent();
+        private void OnTriggerEnter2D(Collider2D collision)
+        {
+            onTriggerEvent.Invoke();
+        }
+    } 
 }

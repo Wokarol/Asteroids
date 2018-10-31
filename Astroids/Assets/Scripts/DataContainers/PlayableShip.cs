@@ -3,7 +3,7 @@
 namespace Wokarol
 {
     [CreateAssetMenu(menuName = "Spawnable Ship Data")]
-    public class SpawnableShip : ScriptableObject
+    public class PlayableShip : ScriptableObject
     {
         public string ID;
         public string ShipName;

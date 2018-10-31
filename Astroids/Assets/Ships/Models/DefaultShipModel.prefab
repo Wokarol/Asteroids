@@ -4651,6 +4651,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   engine: {fileID: 0}
   inverted: 0
+  debug: 0
 --- !u!199 &2795676095104021768
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -9364,6 +9365,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   engine: {fileID: 0}
   inverted: 0
+  debug: 0
 --- !u!199 &2562438404226884701
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -10292,7 +10294,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 600
+      scalar: 300
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -10345,7 +10347,7 @@ ParticleSystem:
     rateOverDistance:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0
+      scalar: 50
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -14086,6 +14088,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   engine: {fileID: 0}
   inverted: 0
+  debug: 0
 --- !u!199 &1505617311921701959
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -23721,6 +23724,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   engine: {fileID: 0}
   inverted: 0
+  debug: 0
 --- !u!199 &3954876324107803033
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -28434,6 +28438,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   engine: {fileID: 0}
   inverted: 1
+  debug: 0
 --- !u!199 &5587471836615010443
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -29441,7 +29446,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 600
+      scalar: 300
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -29494,7 +29499,7 @@ ParticleSystem:
     rateOverDistance:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0
+      scalar: 50
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -33235,6 +33240,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   engine: {fileID: 0}
   inverted: 0
+  debug: 0
 --- !u!199 &4903365554974327131
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -37948,6 +37954,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   engine: {fileID: 0}
   inverted: 0
+  debug: 0
 --- !u!199 &8680002264728604085
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -42818,6 +42825,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   engine: {fileID: 0}
   inverted: 0
+  debug: 0
 --- !u!199 &1740264800740368449
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -47540,6 +47548,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   engine: {fileID: 0}
   inverted: 0
+  debug: 0
 --- !u!199 &4323548197755049022
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -52253,6 +52262,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   engine: {fileID: 0}
   inverted: 0
+  debug: 0
 --- !u!199 &6789478369412835977
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -57344,6 +57354,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   engine: {fileID: 0}
   inverted: 1
+  debug: 0
 --- !u!199 &7053257243711932342
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -62057,6 +62068,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   engine: {fileID: 0}
   inverted: 0
+  debug: 0
 --- !u!199 &3529469529747683891
 ParticleSystemRenderer:
   serializedVersion: 6

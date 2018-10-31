@@ -8,20 +8,20 @@ namespace Wokarol
     public class ScreenDataCalculator : MonoBehaviour
     {
         [SerializeField] ScreenData loopData = null;
+        [SerializeField] bool calculateInUpdate;
         private void Awake()
         {
             Calculate();
-
-            Debug.Log($"-[{loopData.ScreenLeft}, {loopData.ScreenRight}] |[{loopData.ScreenUp}, {loopData.ScreenDown}]");
         }
 
         private void Update()
         {
-            if (/*!Application.isPlaying && */loopData != null) {
+            if (calculateInUpdate && loopData != null) {
                 Calculate();
             }
         }
 
+        [ContextMenu("Calculate")]
         private void Calculate()
         {
             Camera cam = CameraUtil.Main;
