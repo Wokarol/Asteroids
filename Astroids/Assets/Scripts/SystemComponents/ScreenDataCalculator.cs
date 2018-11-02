@@ -7,6 +7,7 @@ namespace Wokarol
     [ExecuteInEditMode]
     public class ScreenDataCalculator : MonoBehaviour
     {
+        [SerializeField] Camera mainCamera = null;
         [SerializeField] ScreenData loopData = null;
         [SerializeField] bool calculateInUpdate = false;
         private void Awake()
@@ -24,9 +25,8 @@ namespace Wokarol
         [ContextMenu("Calculate")]
         private void Calculate()
         {
-            Camera cam = CameraUtil.Main;
-            var screenBL = cam.ScreenToWorldPoint(Vector3.zero);
-            var screenTR = cam.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height));
+            var screenBL = mainCamera.ScreenToWorldPoint(Vector3.zero);
+            var screenTR = mainCamera.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height));
 
             loopData.ScreenLeft = screenBL.x;
             loopData.ScreenRight = screenTR.x;

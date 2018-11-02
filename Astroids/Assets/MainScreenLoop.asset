@@ -17,4 +17,4 @@ MonoBehaviour:
   ScreenUp: 10
   ScreenDown: -10
   LoopX: 0
-  LoopY: 0
+  LoopY: 1
