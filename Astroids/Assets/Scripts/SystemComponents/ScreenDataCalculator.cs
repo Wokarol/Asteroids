@@ -8,7 +8,7 @@ namespace Wokarol
     public class ScreenDataCalculator : MonoBehaviour
     {
         [SerializeField] ScreenData loopData = null;
-        [SerializeField] bool calculateInUpdate;
+        [SerializeField] bool calculateInUpdate = false;
         private void Awake()
         {
             Calculate();

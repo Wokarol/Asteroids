@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SimpleArrowMove : MonoBehaviour
 {
-    [SerializeField] Vector2 speed;
+    [SerializeField] Vector2 speed = Vector2.one;
 
     private void Update()
     {

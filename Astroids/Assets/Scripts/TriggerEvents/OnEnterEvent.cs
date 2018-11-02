@@ -5,12 +5,12 @@ using UnityEngine.Events;
 
 namespace Wokarol.EventTriggers
 {
-    public class OnTriggerEvent : MonoBehaviour
+    public class OnEnterEvent : EventTrigger
     {
-        [SerializeField] UnityEvent onTriggerEvent = new UnityEvent();
+        [SerializeField] UnityEvent onEnterEvent = new UnityEvent();
         private void OnTriggerEnter2D(Collider2D collision)
         {
-            onTriggerEvent.Invoke();
+            TriggerEvent(() => onEnterEvent.Invoke());
         }
     } 
 }
