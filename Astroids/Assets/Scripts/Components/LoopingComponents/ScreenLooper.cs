@@ -27,7 +27,7 @@ namespace Wokarol
 
         private void CreateLoopColliders()
         {
-           
+
 
             if (originalCollider == null) { Debug.LogError("There's no original Collider setted"); return; }
 
@@ -48,7 +48,7 @@ namespace Wokarol
                         var _gizmos = _obj.AddComponent<QuickGizmoMark>();
                         _gizmos.SetGizmo(QuickGizmoMark.GizmoType.circle, new Color(1, 1, 0.5f, 1));
 
-                        if((x == -1 && y == 0) || (x == -1 && y == -1) || (x == 0 && y == -1) || (x == 1 && y == -1)) {
+                        if ((x == -1 && y == 0) || (x == -1 && y == -1) || (x == 0 && y == -1) || (x == 1 && y == -1)) {
                             // Primary colliders
                             _obj.name += $" (Main)";
                             _gizmos.color = new Color(0, 0.9f, 1, 1);
@@ -72,25 +72,30 @@ namespace Wokarol
 
         void CheckLoop()
         {
-            if (transform.position.x > loopData.ScreenRight) {
-                // Right
-                Jump(new Vector3(loopData.ScreenLeft - loopData.ScreenRight, 0, 0));
-                return;
+            if (loopData.LoopX) {
+                if (transform.position.x > loopData.ScreenRight) {
+                    // Right
+                    Jump(new Vector3(loopData.ScreenLeft - loopData.ScreenRight, 0, 0));
+                    return;
+                }
+                if (transform.position.x < loopData.ScreenLeft) {
+                    // Left
+                    Jump(new Vector3(loopData.ScreenRight - loopData.ScreenLeft, 0, 0));
+                    return;
+                }
             }
-            if (transform.position.x < loopData.ScreenLeft) {
-                // Left
-                Jump(new Vector3(loopData.ScreenRight - loopData.ScreenLeft, 0, 0));
-                return;
-            }
-            if (transform.position.y > loopData.ScreenUp) {
-                // Up
-                Jump(new Vector3(0, loopData.ScreenDown - loopData.ScreenUp, 0));
-                return;
-            }
-            if (transform.position.y < loopData.ScreenDown) {
-                // Down
-                Jump(new Vector3(0, loopData.ScreenUp - loopData.ScreenDown, 0));
-                return;
+
+            if (loopData.LoopY) {
+                if (transform.position.y > loopData.ScreenUp) {
+                    // Up
+                    Jump(new Vector3(0, loopData.ScreenDown - loopData.ScreenUp, 0));
+                    return;
+                }
+                if (transform.position.y < loopData.ScreenDown) {
+                    // Down
+                    Jump(new Vector3(0, loopData.ScreenUp - loopData.ScreenDown, 0));
+                    return;
+                }
             }
         }
 

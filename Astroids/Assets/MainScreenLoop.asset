@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09c9e50aacaa6da4ca3c2d97a49becb7, type: 3}
   m_Name: MainScreenLoop
   m_EditorClassIdentifier: 
-  ScreenLeft: -18.53354
-  ScreenRight: 18.53354
+  ScreenLeft: -17.821613
+  ScreenRight: 17.821613
   ScreenUp: 10
   ScreenDown: -10
+  LoopX: 0
+  LoopY: 0
